@@ -1,0 +1,134 @@
+@import "variables.scss";
+@import "font.scss";
+
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*:focus {
+    outline: none;
+}
+.container-full{
+    width: 100%;
+}
+
+h1{
+    font-size: 64px;
+    line-height: 64px;
+    font-family: $title_font;
+}
+h2{
+    font-size: 48px;
+    line-height: 56px;
+    font-family: $title_font;
+}
+h3{
+    font-size: 32px;
+    line-height: 38px;
+    font-family: $subtitle_font;
+    font-weight: 600;
+    color: #323232;
+}
+h4{
+    font-size: 18px;
+    line-height: 20px;
+}
+h5{
+    font-size: 16px;
+    line-height: 18px;
+}
+p{
+    font-size: 15px;
+    line-height: 24px;
+}
+button, .btn{
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 19px;
+    color: $white;
+    background: $green_project;
+    font-weight: 600;
+    display: block;
+    cursor: pointer;
+    padding: 0.825em 5.475em;
+    border: 1px solid $green_project;
+    border-radius: 0.1875em;
+    border-top-left-radius: 0.1875em;
+    border-top-right-radius: 0.1875em;
+    border-bottom-left-radius: 0.1875em;
+    border-bottom-right-radius: 0.1875em;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    &:hover{
+        background: $white;
+        color: $green_project;
+    }
+}
+.subtitle{
+    text-transform: uppercase;
+    color: #7e7e7e;
+    font-weight: 700;
+    letter-spacing: 1.85px;
+}
+
+.img-responsive{
+    max-width: 100%;
+}
+.text-center{
+    text-align: center;
+}
+.grey-bg{
+    background-color: $back_cont;
+}
+.green-bg{
+    background-color: $green_project;
+
+}
+.white-bg{
+    background-color: $white;
+    padding: 3em;
+    border-top-left-radius: 0.1875em;
+    border-top-right-radius: 0.1875em;
+    border-bottom-left-radius: 0.1875em;
+    border-bottom-right-radius: 0.1875em;
+}
+
+@media only screen and (max-width:599px){
+    h1{
+        font-size: 38px;
+        line-height: 38px;
+        font-family: $title_font;
+    }
+    h2{
+        font-size: 32px;
+        line-height: 38px;
+        font-family: $title_font;
+    }
+    h3{
+        font-size: 24px;
+        line-height: 28px;
+        font-family: $subtitle_font;
+        font-weight: 600;
+        color: #323232;
+    }
+    h4{
+        font-size: 15px !important;
+        line-height: 20px;
+    }
+    h5{
+        font-size: 15px;
+        line-height: 16px;
+    }
+    p{
+        font-size: 14px;
+        line-height: 22px;
+    }
+    button, .btn{
+        font-size: 15px;
+        line-height: 18px;
+        padding: 0.825em 2.475em;
+        text-align: center;
+    }
+}
